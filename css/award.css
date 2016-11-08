@@ -1,0 +1,134 @@
+@charset "UTF-8";
+body {
+    font-family: simsun;
+}
+
+.reg-main {
+    width: 990px;
+    margin: 0 auto;
+}
+
+.logo {
+    border-bottom: 3px solid #0261ab;
+    padding: 23px 0 0 0;
+}
+
+.current-pos {
+    font-size: 14px;
+    line-height: 14px;
+    color: #0261ab;
+    padding: 13px 0 15px;
+}
+
+.current-pos .home {
+    background: url(../images/ico_home.png) left center no-repeat;
+    padding-left: 22px;
+}
+
+.current-pos a {
+    color: #666;
+}
+
+
+/*表单*/
+
+.form .form-item {
+    margin: 6px 0 6px 40px;
+    line-height: 28px;
+    vertical-align: top;
+}
+
+.form .btn-box {
+    vertical-align: top;
+}
+
+.form .form-item.mb10 {
+    margin-bottom: 10px;
+}
+
+.form .xin {
+    color: #f00;
+    font-size: 14px;
+    margin-right: 6px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.form .item-l{
+    font-size: 14px;
+    line-height: 32px;
+    color: #0e0d0d;
+    display: block;
+}
+
+.form .txt {
+    width: 398px;
+    height: 26px;
+    line-height: 26px\9;
+    font-size: 14px;
+    text-indent: 8px;
+    border: 1px solid #b5b5b5;
+    background: #fff;
+    font-size: 14px;
+    color: #0e0d0d;
+    outline: none;
+}
+
+.form-hd h2{font-size: 18px;line-height: 28px; color:#101010;font-family: microsoft Yahei;}
+.form-hd h3{font-size: 12px;line-height: 12px; font-weight: normal; color:#666;}
+.reg-time-tips{font-size: 12px;color:#0261ab;line-height: 38px;margin-top: 7px;}
+
+
+
+
+
+
+
+
+
+
+.block-title {
+    background: #dcdcdc;
+    width: 100%;
+    height: 31px;
+    line-height: 31px;
+    text-align: right;
+}
+
+.block-title h3 {
+    font:16px/31px microsoft Yahei;
+    color: #101010;
+    padding-left: 16px;
+    float: left;
+}
+
+.recommended {
+	border-top:1px solid #eee;
+	font-size: 14px;
+	padding:22px 0 0 0;
+}
+.recommended h3{
+	font-size: 14px;
+	line-height:24px;
+	padding-left: 40px;
+
+}
+
+.reg-btn{
+    width:129px;
+    height: 37px;
+    background-color: #c00;
+    border:none;
+    font:18px/37px microsoft Yahei;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 339px;
+}
+
+.form .important-txt{
+	font-size: 14px;
+	font-weight: bold;
+
+}
