@@ -96,16 +96,6 @@ body {
 .form-hd h2{font-size: 18px;line-height: 28px; color:#101010;font-family: microsoft Yahei;}
 .form-hd h3{font-size: 12px;line-height: 12px; font-weight: normal; color:#666;}
 .reg-time-tips{font-size: 12px;color:#0261ab;line-height: 38px;margin-top: 7px;}
-
-
-
-
-
-
-
-
-
-
 .block-title {
     background: #dcdcdc;
     width: 100%;
@@ -164,4 +154,97 @@ body {
     padding:0;
 }
 
-.Validform_checktip{color:#c00;margin-left: 5px;}
+.form-item .Validform_checktip{color:#c00;margin-left: 5px;}
+
+/*弹窗样式*/
+#success-tips{display: none;text-align: center;padding:44px 61px 0;font-family: microsoft Yahei;}
+#success-tips h2{font-size: 18px;color:#464646;line-height: 18px;}
+#success-tips .con{font-size:14px;color:#666;line-height: 22px;margin-top: 16px;}
+#success-tips .auto-close{font-size:14px;color:#27aec2;line-height: 14px;margin-top: 36px;}
+
+/*评选专题*/
+.wrapper{width:1100px;margin-left:auto;margin-right: auto;}
+#header{background: #f3f5f5;height: 60px;line-height:60px;text-align: center;}
+#header img{vertical-align: middle;}
+.nav{margin-left:181px;}
+.nav,.nav li{display: inline-block;*display: inline;*zoom:1;}
+.nav li{width:105px;margin:0 20px;}
+.nav li a{display:block;font:16px/60px microsoft Yahei;color:#666;}
+.nav li a.active,.nav li a:hover{background: #27aec2;color:#fff;}
+
+#banner{background: url(../images/banenr.jpg) center top no-repeat;height: 840px;position: relative;}
+#banner .banner-info{background:rgba(0,0,0,.6);height: 61px;font:22px/61px microsoft Yahei;color:#27aec2;width:587px;position: absolute;top:360px;
+left:50%;margin-left:-293px;text-align: center;}
+.cp-btn{width:264px;height:70px;background: #ea1515;height: 70px;font:33px/70px microsoft Yahei;color:#fff;text-align: center;position: absolute;left:50%;margin-left: -132px;bottom:76px;border-radius: 5px;}
+.cp-btn:hover{text-decoration: none;}
+
+.introduction{background:url(../images/bg1.png) center bottom no-repeat;height: 608px;margin-top: 61px;}
+.intro-left{width:541px;}
+.intro-right{margin-left:560px;}
+.intro-right .con p{
+	text-indent: 2em;
+	font-size: 14px;
+	line-height: 22px;
+	color:#4a5e69;
+	margin-bottom: 10px;
+}
+
+.title{font-family: microsoft Yahei;}
+.title .en{font-size: 24px;color:#a2b4be;margin-left: 5px;}
+
+.process{background: #27aec2;font-family: microsoft Yahei;padding: 53px 0;}
+
+.process-table td{vertical-align: top;}
+.process-table h2{font-size: 24px;color:#fff;line-height:34px;}
+.process-table h3{font-size: 16px;color:#fff;line-height: 32px;}
+.process-table h3 span{font-size: 14px;}
+.process-table .time{font-size: 16px;line-height:26px; color:#fff;}
+
+.process-table .explain{font-size: 14px; line-height: 22px; color:#fff;font-family: simsun;}
+
+
+.awards{background:url(../images/award.png) center top no-repeat;height:1238px;}
+.awards .title{padding-top: 65px;}
+
+.cup-list{position:relative;}
+.cup-list li{position:absolute;}
+.cup-list .cup{cursor: pointer;}
+.cup1{background: url(../images/cup1.png) 0 0 no-repeat;width:343px;height: 346px;}
+.cup2{background: url(../images/cup2.png) 0 0 no-repeat;width:352px;height: 364px;}
+.cup3{background: url(../images/cup3.png) 0 0 no-repeat;width:355px;height: 345px;}
+.cup4{background: url(../images/cup4.png) 0 0 no-repeat;width:314px;height: 346px;}
+.cup5{background: url(../images/cup5.png) 0 0 no-repeat;width:303px;height: 346px;}
+
+.cup-list li:hover .cup{animation: 1s move;}
+.cup-list li:hover .cup-con{display:block;}
+@keyframes move{
+	0%{transform: translateY(-5px);}
+	50%{transform: translateY(5px);}
+	100%{transform: translateY(0);}
+}
+@-webkit-keyframes move{
+	0%{transform: translateY(-5px);}
+	50%{transform: translateY(5px);}
+	100%{transform: translateY(0);}
+}
+
+
+.cup-item1{left:93px;top:34px;}
+.cup-item2{left:390px;top:0;z-index: 1;}
+.cup-item3{left:683px;top:34px;}
+.cup-item4{left:254px;top:543px;}
+.cup-item5{left:568px;top:543px;}
+
+.cup-item1 .cup-con{left:-6px;top:355px;}
+.cup-item2 .cup-con{left:20px;top:389px;}
+.cup-item3 .cup-con{left:47px;top:355px;}
+.cup-item4 .cup-con{left:-250px;top:12px;}
+.cup-item5 .cup-con{left:249px;top:12px;}
+
+.cup-con{position: absolute;background: #fbfbfb;border:1px solid #c7c7c7;width:309px;padding-bottom: 11px;display: none;}
+.cup-con h3{font-size: 12px;line-height: 16px; color:#000;font-weight: bold;text-align: center;padding-top: 9px;}
+.cup-con p{padding:0 0 0 20px;font-size: 12px;}
+.cup-con .con1{color:#0061ae;line-height: 26px;}
+.cup-con .con2{color:#666;line-height: 18px;}
+
+.awards-tips{text-align:center;font:14px/66px microsoft Yahei;color:#666;}

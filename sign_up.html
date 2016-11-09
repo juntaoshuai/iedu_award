@@ -7,7 +7,6 @@
     <title>Examples</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link href="" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://www.ieduchina.com/statics/css/base.css" />
     <link rel="stylesheet" type="text/css" href="http://www.ieduchina.com/statics/css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/award.css">
@@ -93,26 +92,30 @@
             <div class="form-item">
                 <span class="item-l fb"><i class="xin">*</i>申报奖项（不能超过2项）: The award you want to apply for: </span>
                 <div class="item-r">
-                    <div class="apply-award">
+                    <div class="apply-award" id="apply-award">
                         <label>
-                            <input type="checkbox" name="apply_award">
+                            <input type="checkbox" name="apply_award" value="最具潜力国际学校">
                             <span>最具潜力国际学校</span>
                         </label>
                         <label>
-                            <input type="checkbox" name="apply_award">
+                            <input type="checkbox" name="apply_award" value="最受家长信赖国际学校">
                             <span>最受家长信赖国际学校</span>
                         </label>
                         <label>
-                            <input type="checkbox" name="apply_award">
+                            <input type="checkbox" name="apply_award" value="最具影响力国际学校">
                             <span>最具影响力国际学校</span>
                         </label>
                         <br>
                         <label>
-                            <input type="checkbox" name="apply_award">
+                            <input type="checkbox" name="apply_award" value="最佳教学成果国际学校">
                             <span>最佳教学成果国际学校</span></label>
                         <label>
-                            <input type="checkbox" name="apply_award">
-                            <span>最具特色国际学校</span></label>
+                            <input type="checkbox" name="apply_award" value="最具特色国际学校">
+                            <span>最具特色国际学校</span>
+                        </label>
+                        <!--提交时值相连放在这个隐藏域-->
+                        <input type="hidden" name="applyAward">
+
                     </div>
                 </div>
             </div>
@@ -125,7 +128,7 @@
             <div class="form-item">
                 <span class="item-l">办学理念：</span>
                 <div class="item-r">
-                    <textarea name="" id=""></textarea>
+                    <textarea name="idea"></textarea>
                 </div>
             </div>
             <div class="form-item">
@@ -147,15 +150,14 @@
                 </div>
             </div>
             <div class="form-item">
-                <span class="item-l"><i class="xin">*</i>参赛宣言（1-2句话）：</span>
+                <span class="item-l">参赛宣言（1-2句话）：</span>
                 <div class="item-r">
-                    <textarea name="" class="h79"></textarea>
+                    <textarea name="awardWord" class="h79"></textarea>
                 </div>
             </div>
             <div class="form-item">
                 <span class="item-l"><i class="xin">*</i> 资质证明材料上传 <span class="c999">(上传数量不高于5张)</span>：</span>
                 <div class="item-r">
-                    <input type="text" class="txt" name="userName">
                 </div>
             </div>
             <div class="recommended">
@@ -163,25 +165,25 @@
                 <div class="form-item">
                     <span class="item-l">学校（School）</span>
                     <div class="item-r">
-                        <input type="text" class="txt" name="userName">
+                        <input type="text" class="txt" name="recommendedSchool">
                     </div>
                 </div>
                 <div class="form-item">
                     <span class="item-l">联系人（Contact person）</span>
                     <div class="item-r">
-                        <input type="text" class="txt" name="userName">
+                        <input type="text" class="txt" name="contactPerson">
                     </div>
                 </div>
                 <div class="form-item">
                     <span class="item-l">联系方式（Contact method）</span>
                     <div class="item-r">
-                        <input type="text" class="txt" name="userName">
+                        <input type="text" class="txt" name="contactMethod">
                     </div>
                 </div>
                 <div class="form-item">
                     <span class="item-l">推荐理由（Reasons of recommendation）</span>
                     <div class="item-r">
-                       <textarea name="" id=""></textarea>
+                       <textarea name="recommendedReasons"></textarea>
                     </div>
                 </div>
             </div>
@@ -190,6 +192,14 @@
             </p>
         </form>
     </div>
+    <!--表单提交成功后的弹窗-->
+    <div id="success-tips">
+        <h2>参选报名提交成功！</h2>
+        <p class="con">我们将尽快与您联系，请保持手机通讯畅通。谢谢！</p>
+        <p class="auto-close">5秒后自动关闭提示</p>
+    </div>
+    <!--表单提交成功后的弹窗-->
+
     <div id="iedu-footer" class="mt30">
         <div class="main-wrapper">
             <div class="copyright tc mt10">
@@ -221,6 +231,7 @@
         </div>
     </div>
     <script type="text/javascript" src="http://www.ieduchina.com/statics/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="http://www.ieduchina.com/statics/js/layer-v2.1/layer.js"></script>
     <script type="text/javascript" src="js/award.js"></script>
 </body>
 
