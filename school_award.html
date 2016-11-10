@@ -8,19 +8,29 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="http://www.ieduchina.com/statics/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="http://www.ieduchina.com/statics/css/style.css">
     <link rel="stylesheet" type="text/css" href="css/award.css">
 </head>
 
 <body>
+    <div id="iedu-header">
+        <div class="main-wrapper">
+            <a href="http://www.ieduchina.com/service/aboutus.html" target="_blank" class="fl" rel="nofollow">关于我们</a>
+            <a href="http://www.ieduchina.com/service/aboutus_en.html" target="_blank" class="fl ml20" rel="nofollow">About US</a>
+            <a href="http://www.ieduchina.com/service/tougao.html" target="_blank" class="fl ml20" rel="nofollow">投稿</a><span class="fl ml5">/</span><a href="http://www.ieduchina.com/service/tougao_en.html" target="_blank" class="fl ml5" rel="nofollow">Contribute</a>
+            <div class="fr" id="login-before"><a target="_blank" href="http://www.ieduchina.com/tags/" class="fl">标签</a><a href="http://www.ieduchina.com/login.html" class="login fl ml20" target="_blank" rel="nofollow">登录</a><a target="_blank" href="http://www.ieduchina.com/register.html" class="ml20 fl" rel="nofollow">注册</a></div>
+        </div>
+        <div class="clear"></div>
+    </div>
     <div id="header">
         <div class="wrapper">
             <a href="http://www.ieduchina.com/" target="_blank"><img src="images/small_logo.png" align="中国国际教育网"></a>
             <ul class="nav">
-                <li><a href="javascript:;" class="active">首页</a></li>
-                <li><a href="javascript:;">评选介绍</a></li>
-                <li><a href="javascript:;">评选流程</a></li>
-                <li><a href="javascript:;">奖项设置</a></li>
-                <li><a href="javascript:;">参评报名</a></li>
+                <li><a href="#banner" class="active">首页</a></li>
+                <li><a href="#intro">评选介绍</a></li>
+                <li><a href="#process">评选流程</a></li>
+                <li><a href="#awards">奖项设置</a></li>
+                <li><a href="sign_up.html">参评报名</a></li>
             </ul>
         </div>
     </div>
@@ -32,7 +42,7 @@
         <a href="sign_up.html" target="_blank" class="cp-btn">我要参评</a>
     </div>
     <div id="main">
-        <div class="introduction">
+        <div class="introduction" id="intro">
             <div class="wrapper">
                 <div class="intro-left fl">
                     <img src="images/intro.png">
@@ -56,7 +66,7 @@
                 </div>
             </div>
         </div>
-        <div class="process">
+        <div class="process" id="process">
             <div class="wrapper">
                 <div class="title tc"><img src="images/title2.png"></div>
                 <table class="process-table">
@@ -104,7 +114,7 @@
                 </table>
             </div>
         </div>
-        <div class="awards">
+        <div class="awards" id="awards">
             <div class="wrapper">
                 <div class="title tc"><img src="images/title3.png"></div>
                 <p class="awards-tips">本次评选共设5个奖项，涵盖不同的参评范围，各国际学校都有机会在这场评选活动中竞逐奖项。</p>
@@ -245,35 +255,133 @@
             </div>
         </div>
     </div>
-
-
+    <!--左则固定导航-->
+    <div class="fuchuang">
+        <dl>
+            <dt>
+                <a href="http://www.ieduchina.com/register.html" target="_blank"><img src="images/ico_person.png"></a>
+            </dt>
+            <dd><a href="http://www.ieduchina.com/register.html" target="_blank">会员注册</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="http://weibo.com/p/1006065993432436/home?profile_ftype=1&is_all=1#_0" target="_blank">IEduChina <br>官方微博</a></dt>
+            <dd class="mt9">
+                <a href="http://weibo.com/p/1006065993432436/home?profile_ftype=1&is_all=1#_0" target="_blank"><img src="images/ico_weibo.png"></a>
+            </dd>
+        </dl>
+        <dl style="border:none">
+            <dt><img src="images/qq.png"></dt>
+            <dd>评选QQ交流群
+                <br> 290649755</dd>
+        </dl>
+    </div>
     <div class="xufu_weixin">
         <h4><img src="images/weixin.png"></h4>
         <span>评选活动微信群</span>
         <div class="xufunav">
-            <a href="http://www.ofweek.com/seminar/2016/solar_LT/" target="_blank" class="xf-link1">我要参评</a>
-            <a href="http://www.ofweek.com/seminar/2016/solar_LT/attend.html#ch" class="xf-link2">分享活动</a>
-            <p class="gotop">返回顶部<i></i></p>
+            <a href="sign_up.html" target="_blank" class="xf-link1"><i></i>我要参评</a>
+            <div class="xf-link2" id="share"><i></i>分享活动
+                <div style="position: absolute; z-index: 6; overflow: auto; bottom: 0px; right: 124px; display: none;" class="jiathis_style">
+                    <div class="jiadiv_01">
+                        <div style="width:100%;background:#F2F2F2;border-bottom:1px solid #E5E5E5;line-height:200%;padding-left:5px;font-size:12px">
+                            <table width="100%">
+                                <tbody>
+                                    <tr class="jt_sharetitle">
+                                        <td align="left" style="text-align:left;line-height:25px;font-size:14px;font-weight:bold;color:#000000;">分享到...</td>
+                                        <td align="right" style="text-align:right;"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="jiathis_sers" style="width:100%;" class="jiadiv_02"><a class="jiatitle" onclick="jiathis_sendto('copy');return false;" href="javascript:;"><span class="jtico jtico_copy">复制网址</span></a><a class="jiatitle" onclick="jiathis_sendto('email');return false;" href="javascript:;"><span class="jtico jtico_email">邮件</span></a><a class="jiatitle" onclick="jiathis_sendto('qzone');return false;" href="javascript:;"><span class="jtico jtico_qzone">QQ空间</span></a><a class="jiatitle" onclick="jiathis_sendto('tsina');return false;" href="javascript:;"><span class="jtico jtico_tsina">新浪微博</span></a><a class="jiatitle" onclick="jiathis_sendto('tqq');return false;" href="javascript:;"><span class="jtico jtico_tqq">腾讯微博</span></a><a class="jiatitle" onclick="jiathis_sendto('weixin');return false;" href="javascript:;"><span class="jtico jtico_weixin">微信</span></a><a class="jiatitle" onclick="jiathis_sendto('renren');return false;" href="javascript:;"><span class="jtico jtico_renren">人人网</span></a><a class="jiatitle" onclick="jiathis_sendto('yixin');return false;" href="javascript:;"><span class="jtico jtico_yixin">易信</span></a><a class="jiatitle" onclick="jiathis_sendto('t163');return false;" href="javascript:;"><span class="jtico jtico_t163">网易微博</span></a><a class="jiatitle" onclick="jiathis_sendto('tsohu');return false;" href="javascript:;"><span class="jtico jtico_tsohu">搜狐微博</span></a><a class="jiatitle" onclick="jiathis_sendto('cqq');return false;" href="javascript:;"><span class="jtico jtico_cqq">QQ好友</span></a><a class="jiatitle" onclick="jiathis_sendto('kaixin001');return false;" href="javascript:;"><span class="jtico jtico_kaixin001">开心网</span></a><a class="jiatitle" onclick="jiathis_sendto('feixin');return false;" href="javascript:;"><span class="jtico jtico_feixin">飞信</span></a><a class="jiatitle" onclick="jiathis_sendto('douban');return false;" href="javascript:;"><span class="jtico jtico_douban">豆瓣</span></a><a class="jiatitle" onclick="jiathis_sendto('ishare');return false;" href="javascript:;"><span class="jtico jtico_ishare">一键分享</span></a><a class="jiatitle" onclick="$CKE.center(this);return false;" href="javascript:;"><span class="jtico jtico_jiathis">查看更多(122)</span></a>
+                            <div style="clear:both"></div>
+                        </div>
+                        <div style="width:100%;" class="ckepopBottom">
+                            <div style="float:right;font-size:11px;margin:0 5px 0 0;"><img border="0" align="absmiddle" src="http://v3.jiathis.com/code/images/img_012.gif"><a target="_blank" class="link_01" style="color:#333333;padding:0 3px;" href="http://www.jiathis.com/index2">JiaThis</a></div>
+                            <div style="clear:both"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="gotop" id="gotop">返回顶部<i></i></p>
         </div>
         <a href="javascript:" id="flybox-db-closer" class="closer" onclick="this.parentNode.style.display='none';">X</a>
     </div>
     <script type="text/javascript" src="http://www.ieduchina.com/statics/js/jquery-1.8.0.min.js"></script>
-    <script type="text/javascript" src="http://www.ieduchina.com/statics/js/layer-v2.1/layer.js"></script>
-    <script type="text/javascript" src="js/award.js"></script>
+    <script charset="utf-8" src="http://v3.jiathis.com/code/jia.js?uid=1399517271954872"></script>
     <script type="text/javascript">
-    /*$(function(){
-                                    $(".cup-list li").hover(function(){
-                                        var $this=$(this);
-                                        $(this).find(".cup").stop().animate({"margin-top":"-5px"},500,function(){
-                                            $this.find(".cup").stop().animate({"margin-top":"5px"},500,function(){
-                                            $this.find(".cup-con").fadeIn();
-                                        });
+    $(function() {
+        function gotoPos(element) {
+            $('a[href$="' + element + '"]').click(function() {
+                var dis = $("#" + element).offset().top;
+                if ($(window).scrollTop() < 30) {
+                    $("html,body").animate({
+                        scrollTop: dis - 130
+                    }, 500)
+                } else {
+                    $("html,body").animate({
+                        scrollTop: dis - 65
+                    }, 500)
 
-                                        });
-                                        
-                                    
-                                    });
-                                });*/
+                }
+
+            });
+
+        }
+
+        gotoPos("banner");
+        gotoPos("intro");
+        gotoPos("process");
+        gotoPos("awards");
+
+        $(".nav li a").click(function() {
+            $(".nav li a").removeClass("active");
+            $(this).addClass("active")
+        });
+
+        $("#gotop").click(function() {
+            $("html,body").animate({
+                scrollTop: 0
+            }, 500)
+        });
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 30) {
+                $("#header").addClass("fix");
+            } else {
+                $("#header").removeClass("fix");
+
+            }
+
+            if ($(this).scrollTop() > $(window).height()) {
+                $(".xufu_weixin,.fuchuang").show();
+                getCenterHeight(".xufu_weixin");
+                getCenterHeight(".fuchuang");
+
+            } else {
+                $(".xufu_weixin,.fuchuang").hide();
+
+            }
+
+
+        }).trigger("scroll");
+
+        function getCenterHeight(obj) {
+            var H = ($(window).height() - $(obj).outerHeight(true)) / 2;
+            $(obj).css("top", H);
+        }
+
+        $("#share").mouseenter(function() {
+            $('.jiathis_style').show();
+        })
+        $("#share").mouseleave(function() {
+            $('.jiathis_style').hide();
+        })
+
+
+
+
+    });
     </script>
 </body>
 
