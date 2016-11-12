@@ -18,6 +18,7 @@ function validateEmpty(obj, msg, val) {
     });
 }
 
+
 function validatePhone(obj) {
     $(obj).blur(function() {
         var reg = /^[0-9]*[-]*[0-9]*$/
@@ -124,11 +125,17 @@ $("#reg-btn").click(function(ev) {
     //给申报奖项隐藏域设值
     getApplyAward();
 
+    $(".form-item .txt,.form-item textarea").each(function(){
+    	if($(this).hasClass("error")){
+    	//把光标定到第一个错误的文本框
+           $(this).focus();
+           $("html,body").animate({'scrollTop':$(this).offset().top-30},300);
+           return false;
+    	}
+    });
 
-    if ($(".error").length) {
-    	$("html,body").animate({'scrollTop':"200px"},300);
-        return false;
-    }
+
+
     //表单提交
      $.ajax({
                 //url: "js/ajax.txt",
